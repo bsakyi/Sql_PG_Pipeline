@@ -16,8 +16,9 @@ It does extraction and loading.
 ## Requirements
 - Python 3.x
 - `psycopg2` library for PostgreSQL connectivity
-- `mysql-connector-python` library for MySQL connectivity
+- `mysql-connector-python` library for MySQL connectivity 
 
 ## Usage
-```bash
+```bash 
+pip install -r requirements.txt
 python pipeline.py
