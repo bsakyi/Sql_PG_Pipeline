@@ -18,7 +18,7 @@ pgcur.execute(pgcreate_table)
 pgcon.commit()
 
 # Execute query to retrieve data from MySQL
-sqlcur.execute("SELECT * FROM customers LIMIT 200")
+sqlcur.execute("SELECT * FROM customers")
 mysql_data = sqlcur.fetchall()
 
 print(mysql_data)
