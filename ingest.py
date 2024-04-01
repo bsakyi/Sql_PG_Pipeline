@@ -18,10 +18,10 @@ pgcur.execute(pgcreate_table)
 pgcon.commit()
 
 # Execute query to retrieve data from MySQL
-sqlcur.execute("SELECT * FROM customers")
+sqlcur.execute("SELECT id, first_name, last_name, gender, date_of_birth, contact_number FROM customers")
 mysql_data = sqlcur.fetchall()
 
-print(mysql_data)
+# print(mysql_data)
 
 # Insert data into PostgreSQL
 for row in mysql_data:
